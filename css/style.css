@@ -1,0 +1,132 @@
+body {
+    margin:0; 
+    box-sizing: border-box; 
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    background-color: hsl(226, 43%, 10%);
+    background-size: cover;
+}
+.container {
+    width: 75%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, 50%);
+    gap: 2%;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 790px) {
+    .container {width: 90%; display: block}
+
+    .container > div {margin: 20px 0}
+}
+.main {grid-row: 1 / 3}
+
+.main > div:first-of-type {
+    padding: 35px 65px 65px 30px;
+    margin-bottom: -10px;
+    position: relative;
+    z-index: 2;
+    border-radius: 15px;
+    background-color: hsl(246, 80%, 60%);
+}
+@media (max-width: 790px) {
+    .main > div:first-of-type {
+        display: flex;
+        padding: 0px 15px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+.main > div:first-of-type img {width: 80px; border-radius: 50%; border: 3px solid white}
+
+@media (max-width: 790px) {
+    .main > div:first-of-type img {width: 60px; margin-right: 15px}
+}
+.main > div:first-of-type p {
+    color: hsl(236, 100%, 87%);
+    font-weight: 400;
+    font-size: 14px;
+    margin: 30px 0 5px;
+}
+.main > div:first-of-type h2 {font-weight: 300; margin: 0 0 40px}
+
+.main > div:last-of-type {
+    padding: 25px 25px 10px;
+    border-radius: 0 0 15px 15px;
+    background-color: hsl(235, 46%, 20%);
+}
+@media (max-width: 790px) {
+    .main > div:last-of-type {display: flex; justify-content: space-between}
+}
+.main > div:last-of-type p {color: hsl(236, 100%, 87%)}
+
+.main > div:last-of-type p:hover {color: white; cursor: pointer}
+
+.main > div:last-of-type p.active {color: white}
+
+.activity.work > div:first-of-type {background-color: hsl(15, 100%, 70%)}
+
+.activity.play > div:first-of-type {background-color: hsl(195, 74%, 62%)}
+
+.activity.Study > div:first-of-type {background-color: hsl(348, 100%, 68%)}
+
+.activity.exercise > div:first-of-type {background-color: hsl(145, 58%, 55%)}
+
+.activity.social > div:first-of-type {background-color: hsl(264, 64%, 52%)}
+
+.activity.self-care > div:first-of-type {background-color: hsl(43, 84%, 65%)}
+
+.activity > div:first-of-type {
+    text-align: right;
+    padding-right: 15px;
+    margin-bottom: -30px;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+}
+.activity > div:first-of-type img {width: 80px; height: 80px; margin-top: -15px}
+
+.activity > div:last-of-type {
+    padding: 20px 25px 35px;
+    border-radius: 15px;
+    background-color: hsl(235, 46%, 20%);
+}
+@media (max-width: 790px) {
+    .activity > div:last-of-type {padding: 25px}
+}
+.activity > div:last-of-type:hover {background-color: hsl(240, 45%, 35%)}
+
+.activity > div:last-of-type > div:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 790px) {
+    .activity > div:last-of-type > div:first-of-type p {margin: 0}
+}
+.activity > div:last-of-type > div:first-of-type img:hover{filter: brightness(1.5)}
+
+.activity > div:last-of-type > div:last-of-type h1 {font-size: 2.5em; font-weight: 100; margin: 10px 0 0px}
+
+@media (max-width: 790px) {
+    .activity > div:last-of-type > div:last-of-type {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .activity > div:last-of-type > div:last-of-type h1 {font-size: 2em}
+}
+.activity > div:last-of-type > div:last-of-type p {
+    color: hsl(236, 100%, 87%);
+    font-size: 12px;
+    font-weight: 100;
+    margin: 10px 0 10px;
+}
+
+.attribution { font-size: 11px; text-align: center}
+
+.attribution a { color: hsl(228, 45%, 44%)}
